@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ideas into Products</title>
+<style>
+:root{--bg:#f6f5f2;--fg:#1b1d1f;--mut:#5c6166;--card:#fff;--line:#d9d9d4;--ac:#2a4d8f;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#15171a;--fg:#eceae4;--mut:#a3a8ad;--card:#1f2226;--line:#33373c;--ac:#8fb0f0}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 "Segoe UI",system-ui,sans-serif;transition:background .3s}
+body[data-p=c]{--bg:#0e1116;--fg:#e6ebf2;--mut:#98a3b3;--card:#171c24;--line:#2a323e;--ac:#5eead4}
+body[data-p=t]{--bg:#f1f4ec;--fg:#1d2b22;--mut:#53645a;--card:#fff;--line:#d3dccb;--ac:#2f6b4a}
+body[data-p=m]{--bg:#fbf3ea;--fg:#2b1f1a;--mut:#6d5b52;--card:#fffaf4;--line:#e8d8c8;--ac:#b4472f;--ac2:#2f5d73;font-family:Georgia,"Times New Roman",serif}
+h1,h2,h3{line-height:1.2;margin:0 0 .5em;letter-spacing:-.01em}
+h1{font-size:clamp(2rem,6vw,3.4rem)}h2{font-size:1.5rem;margin-top:2.2rem}h3{font-size:1.1rem}
+p{margin:0 0 1em;max-width:68ch}
+a{color:var(--ac)}
+button,select,input,textarea{font:inherit;color:inherit}
+button{cursor:pointer;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:.5rem .9rem;min-height:40px}
+button:hover{border-color:var(--ac)}
+button.pri{background:var(--ac);color:var(--bg);border-color:var(--ac);font-weight:600}
+:focus-visible{outline:3px solid var(--ac);outline-offset:2px}
+input,select,textarea{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:.5rem .7rem;min-height:40px;width:100%}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:flex;gap:.5rem;flex-wrap:wrap;align-items:center;padding:.6rem 1rem;background:var(--bg);border-bottom:1px solid var(--line)}
+nav b{margin-right:auto}
+nav button[aria-current=true]{background:var(--ac);color:var(--bg);border-color:var(--ac)}
+main{max-width:1000px;margin:0 auto;padding:1.5rem 1rem 4rem}
+.view{display:none}.view.on{display:block}
+.grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1.1rem}
+.pcard{text-align:left;display:block;width:100%;padding:0;overflow:hidden;border-radius:14px;min-height:0}
+.pcard .vis{height:120px;display:flex;align-items:center;justify-content:center;font-size:.85rem}
+.pcard .tx{padding:1rem}
+.pill{display:inline-block;font-size:.75rem;border:1px solid var(--line);border-radius:99px;padding:.1rem .6rem;color:var(--mut)}
+.pill.ok{border-color:var(--ac);color:var(--ac)}
+.note{font-size:.85rem;color:var(--mut);border-left:3px solid var(--ac);padding-left:.7rem;margin:.8rem 0}
+ul.clean{list-style:none;margin:0;padding:0}
+.row{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap}
+.rm li{padding:.5rem 0;border-bottom:1px solid var(--line)}
+.rm li:last-child{border:0}
+.chk{display:flex;gap:.6rem;align-items:center;padding:.5rem 0;border-bottom:1px solid var(--line)}
+.chk input{width:22px;height:22px;min-height:0}
+.chk.done label{text-decoration:line-through;color:var(--mut)}
+.heat{display:grid;grid-template-columns:repeat(20,1fr);gap:3px;margin-top:.5rem}
+.heat i{aspect-ratio:1;border-radius:3px;background:var(--line)}.heat i.y{background:var(--ac)}.heat i.t{outline:2px solid var(--ac)}
+.msg{padding:.7rem 1rem;border-radius:12px;margin:.6rem 0;max-width:85%}
+.msg.mind{background:var(--ac2);color:#fff}.msg.mann{background:var(--ac);color:#fff;margin-left:auto}
+.msg small{display:block;opacity:.85;font-size:.75rem}
+.tag{font-size:.7rem;background:rgba(255,255,255,.25);border-radius:4px;padding:0 .4rem}
+.step{flex:1;min-width:120px;text-align:center}
+svg text{font-family:inherit}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style></head><body>
+<nav aria-label="Projects"><b>Ideas into Products</b>
+<button data-go="" aria-current="true">Portfolio</button><button data-go="chiranjiv">CHIRANJIV</button><button data-go="trip">AI Trip Planner</button><button data-go="mind">Mind vs Mann</button></nav>
+<main>
+<section class="view on" id="v-home">
+<h1>Ideas into Products</h1>
+<p>Three independent product experiments exploring productivity, travel intelligence and human psychology. Each is a frontend prototype with sample data; none has a backend, live AI or real routing.</p>
+<div class="grid">
+<button class="card pcard" data-go="chiranjiv"><div class="vis" style="background:#0e1116;color:#5eead4">Day 18 / 100 · 3 of 4 tasks</div><div class="tx"><h3>CHIRANJIV / 100DAYS</h3><p>Turn your goals into daily progress.</p><span class="pill">AI Coach / Productivity</span></div></button>
+<button class="card pcard" data-go="trip"><div class="vis" style="background:#dfe8d4;color:#2f6b4a">1 ─ 2 ─ 3 ─ 4 ─ 5 route</div><div class="tx"><h3>AI Trip Planner</h3><p>Choose your places. Get the smartest route.</p><span class="pill">Travel Tech</span></div></button>
+<button class="card pcard" data-go="mind"><div class="vis" style="background:#fbf3ea;color:#2b1f1a;font-family:Georgia,serif">Mind ⇄ Mann</div><div class="tx"><h3>Mind vs Mann</h3><p>When what you know and what you feel disagree.</p><span class="pill">Psychology / Education</span></div></button>
+</div></section>
+<div id="proj"></div>
+
+<!-- CHIRANJIV -->
+<section class="view" id="v-chiranjiv">
+<span class="pill ok">Prototype / Concept</span>
+<h1>CHIRANJIV / 100DAYS</h1><p>Turn your goals into daily progress. A goal-execution platform first, an AI coach later.</p>
+<div class="grid">
+<div class="card" style="grid-column:1/-1"><h3>Set your goal <span class="pill">Simulated</span></h3><div class="grid"><label>Goal<input id="goal" value="Become interview-ready"></label><label>Challenge length (days)<select id="dur"><option>30</option><option>60</option><option selected>100</option></select></label></div><label style="display:block;margin-top:.6rem">Add your resources (books, notes, PDFs)<input type="file" id="files" multiple></label><div class="row" style="margin:.5rem 0"><input id="link" placeholder="Or type a resource name or link" style="flex:1;min-width:180px" aria-label="Resource name or link"><button id="addRes">Add resource</button></div><ul class="clean rm" id="res"></ul><div class="row" style="margin-top:.5rem"><button class="pri" id="gen">Generate draft plan</button><button id="clr">Clear resources</button></div><div id="plan" aria-live="polite"></div><p class="note">Files stay in your browser and are never read or uploaded. Only their names are used, and the plan comes from simple rules, not an AI model.</p></div>
+<div class="card"><h3 id="chT">Challenge: Become interview-ready</h3>
+<div class="row"><svg width="110" height="110" viewBox="0 0 110 110" role="img" aria-label="Progress ring"><circle cx="55" cy="55" r="46" fill="none" stroke="var(--line)" stroke-width="10"/><circle id="ring" cx="55" cy="55" r="46" fill="none" stroke="var(--ac)" stroke-width="10" stroke-linecap="round" transform="rotate(-90 55 55)" stroke-dasharray="289" stroke-dashoffset="289"/><text id="ringt" x="55" y="60" text-anchor="middle" fill="var(--fg)" font-size="18">0%</text></svg>
+<div><b id="dayl">Day 18 of 100</b><br><span id="streak"></span><br><small style="color:var(--mut)">Sample data</small></div></div>
+<div class="heat" id="heat" aria-label="Last 20 days, sample data"></div></div>
+<div class="card"><h3>Today’s tasks</h3><div id="tasks"></div></div>
+<div class="card"><h3>Reflection</h3><label for="refl" class="note" style="display:block">What went well, what was difficult, and why?</label><textarea id="refl" rows="3">I struggled with binary search edge cases.</textarea><div class="row" style="margin-top:.5rem"><button id="saveR">Save reflection</button><span id="rs" aria-live="polite" style="color:var(--mut)"></span></div></div>
+<div class="card"><h3>AI Coach <span class="pill">Simulated</span></h3><p id="coach" aria-live="polite">Press the button for a suggestion based on your tasks and reflection.</p><button class="pri" id="askC">Get coach suggestion</button><p class="note">Rule-based demo text. No AI model is connected.</p></div>
+</div>
+<div id="info-c"></div></section>
+
+<!-- TRIP -->
+<section class="view" id="v-trip">
+<span class="pill ok">Prototype / Concept</span>
+<h1>AI Trip Planner</h1><p>Choose your places. Get the smartest route. You already know where you want to go; the planner sequences and splits those places.</p>
+<div class="card"><div class="grid">
+<div><label>Starting point<select id="start" aria-describedby="sn"></select></label><small id="sn" style="color:var(--mut)">Choose from places with built-in coordinates (no geocoder connected).</small></div>
+<label>Trip days<select id="days"><option>1</option><option>2</option><option>3</option><option selected>5</option></select></label>
+<label>Travel mode<select id="mode"><option value="driving">Car</option><option value="two-wheeler">Bike / scooter</option><option value="walking">Walking</option></select></label></div>
+<div class="row" style="margin-top:.8rem"><input id="addn" placeholder="Add a destination you chose" style="flex:1;min-width:180px" aria-label="Destination name"><button id="addb" class="pri">Add stop</button><button id="opt">Reorder by nearest next</button><button id="rst">Reset sample</button></div>
+<p id="tmsg" class="note" aria-live="polite">Stops you add by name are listed but can’t be placed on the schematic without a geocoder.</p></div>
+<div class="grid" style="margin-top:1rem"><div class="card"><h3>Stops</h3><ol class="rm" id="stops" style="padding-left:1.2rem;margin:0"></ol></div>
+<div class="card"><h3>Schematic map</h3><svg id="map" viewBox="0 0 300 300" style="width:100%;background:var(--bg);border-radius:8px" role="img" aria-label="Schematic of route stops"></svg><p class="note">Straight lines between stops, plotted from approximate coordinates. Not a road map.</p></div></div>
+<div class="card" style="margin-top:1rem"><h3>Day-wise itinerary preview</h3><div id="itin"></div><p class="note">Demo heuristic: stops are chunked evenly across days using straight-line distance. It is not an AI and not a proven optimal route, and it uses no travel time, traffic or opening hours. Google Maps computes the real route when you open a link.</p></div>
+<div id="info-t"></div></section>
+
+<!-- MIND -->
+<section class="view" id="v-mind">
+<span class="pill ok">Prototype / Concept</span>
+<h1>Mind vs Mann</h1><p>When what you know and what you feel disagree. Two voices, no forced winner.</p>
+<div class="card"><div class="row"><label for="lang">Language</label><select id="lang" style="width:auto"><option value="en">English</option><option value="hi">हिन्दी</option><option value="mr">मराठी</option></select></div><p id="lnote" class="note" hidden>Hindi and Marathi content isn’t written yet. Natural, reviewed translations are planned, so this demo stays in English rather than showing machine-made text.</p>
+<div class="row" style="margin:.8rem 0"><input id="th" style="flex:1;min-width:200px" aria-label="Your thought" value="I know the relationship is over, but I still miss that person."><button class="pri" id="go">Hear Mind and Mann</button></div>
+<div class="row"><button class="ex" data-t="I know I should sleep early but I keep scrolling.">Try: late-night scrolling</button><button class="ex" data-t="I know it wasn’t my fault, but I still feel guilty.">Try: guilt</button></div>
+<div id="chat" aria-live="polite"></div></div>
+<div class="card" style="margin-top:1rem"><h3>Research workflow mockup</h3><p>Student → Evidence → Knowledge base → Conversation. Select a stage.</p><div class="row" id="flow"></div><p id="flowd" class="note"></p></div>
+<p class="note">General education only. Not a diagnosis, and not a substitute for therapy or professional care.</p>
+<div id="info-m"></div></section>
+</main>
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const el=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e};
+// ---- routing
+const names={"":"v-home",chiranjiv:"v-chiranjiv",trip:"v-trip",mind:"v-mind"},pk={chiranjiv:"c",trip:"t",mind:"m"};
+function route(){const h=location.hash.slice(1);const k=names[h]!==undefined?h:"";$$(".view").forEach(v=>v.classList.toggle("on",v.id===names[k]));
+ if(pk[k])document.body.dataset.p=pk[k];else delete document.body.dataset.p;
+ $$("nav button").forEach(b=>b.setAttribute("aria-current",b.dataset.go===k));window.scrollTo(0,0)}
+document.addEventListener("click",e=>{const b=e.target.closest("[data-go]");if(b){location.hash=b.dataset.go||"";if(!b.dataset.go)history.replaceState(null,"",location.pathname);route()}});
+addEventListener("hashchange",route);
+// ---- shared info sections
+const INFO={
+c:{problem:"To-do lists record tasks but don’t help a person stay consistent on a long goal, or see what is working.",vision:"A reliable execution system first. AI later supports planning and review rather than replacing the workflow. Target user: someone preparing for a long goal such as interviews.",how:"Goal → Challenge → Day → Task → Completion → Reflection → Progress",
+feat:["Goals, challenges with start date and duration, milestones","Daily tasks and subtasks; complete, skip or incomplete","Reflections, streaks, progress dashboard, calendar view","Later: roadmap generation, daily suggestions, missed-work analysis, voice updates"],
+road:[["V0","Prototype of the core loop","Concept"],["V1","Core 100-day execution platform","Focus"],["V2","AI Coach: planning, suggestions, progress analysis","Proposed"],["V3","Personal AI / JARVIS direction","Discussed as future"],["V4","Gamification (maybe a parallel track)","Proposed"],["V5","Personal Life OS","Reconstructed"],["V6","Personal AI ecosystem","Reconstructed"],["V7","Multimodal / agent capabilities","Reconstructed"]],
+rn:"The user recalls a roadmap reaching V6 or V7, but the original wording wasn’t recovered. Labels V5–V7 are proposed stages, not verified decisions. A separate AI capability ladder (roadmap → daily planning → analysis → adaptive planning → knowledge base → tools/agents → voice → ecosystem) is possible evolution, not the same as the versions.",
+tech:"Proposed, not built: Next.js + TypeScript, PostgreSQL + Prisma, authentication, an LLM API for coaching. Add RAG only when there’s a real retrieval need.",
+stat:"Concept with a frontend demo. Open: V5–V7 scope, whether gamification is V4, web-only start, final brand."},
+t:{problem:"Planning a multi-stop trip means searching places one by one, guessing the order, splitting days by hand and re-entering the route in a navigation app.",vision:"“I know where I want to go. You figure out the smartest way to visit all those places.” Not a destination-discovery app.",how:"Create trip → set start → add chosen places → set days and mode → optimize → split into days → review on map → open in Google Maps",
+feat:["Add, remove and reorder chosen destinations","Route engine: distances, durations, stop order, day grouping (proposed, calculated from map data)","AI layer (proposed): reads preferences, explains and revises plans. It must never invent distances, traffic or opening hours","Numbered markers, per-day routes, Google Maps handoff"],
+road:[["V1","Smart itinerary builder","Proposed"],["V2","AI-powered trip planning","Proposed"],["V3","Intelligent assistant: opening hours, traffic, weather","Proposed"],["V4","Collaborative planning","Proposed"],["V5","Complete travel platform","Proposed"],["V6","AI travel agent","Proposed"]],
+rn:"V1–V6 are reconstructed labels, not the original version names.",
+tech:"Proposed, not locked: Next.js + TypeScript, Tailwind + shadcn/ui, PostgreSQL + Prisma, Google Maps Platform (geocoding, routes), an LLM API, Vercel or Cloudflare. Confirm quotas, billing and terms first. An earlier prototype named Waywise existed; this demo does not use a live map or geocoder.",
+stat:"Concept with a frontend demo. Open: optimization objective, V1 transport modes, locked stops, scheduling rules, routing provider, final name."},
+m:{problem:"People can understand something logically and still feel differently. Typical psychology content explains this like a lecture, which is easy to ignore.",vision:"Teach psychology through natural conversation between two perspectives. Both can be right and neither wins. Humour is welcome, but accuracy comes first and pain is never mocked.",how:"Person shares a thought → Mind and Mann talk → a short plain-language explanation → an optional reflection",
+feat:["Conversational dialogue in English, Hindi and Marathi","Practical reflection exercises","Student research workflow: sources, verification, evidence knowledge base, version history","Safety handling for crisis messages; no diagnosis"],
+road:[["V1","User conversation + student research/content workflow","Focus"],["Backlog","Bhagavad Gita, multiple philosophies, complex voice, autonomous agents","Excluded from V1"]],
+rn:"V1 scope is a confirmed decision. Whether it uses curated paths, an LLM or both is still open.",
+tech:"Proposed: Next.js + TypeScript, Tailwind + shadcn/ui, PostgreSQL + Prisma, one LLM integration, a structured evidence base. pgvector/RAG only if verified content needs semantic search.",
+stat:"Concept with a frontend demo using three curated conversations. Open: review governance, student contribution scope, safety escalation, brand and taxonomy."}};
+INFO.c.ex="A software engineer sets “Become interview-ready” for 100 days. On Day 18 they finish 3 of 4 tasks, note that binary search edge cases were hard, and the coach (simulated here) suggests a short boundary-conditions review tomorrow.";INFO.t.ex="A visitor lands at Kochi airport with five chosen places (Munnar, Thekkady, Alleppey, Fort Kochi, Varkala) and five days. The planner orders and splits them, and a real version would take distances and times from a routing service. The sample order here is illustrative, not calculated from road data.";INFO.m.ex="Someone thinks: “I know the relationship is over, but I still miss that person.” Mind and Mann talk it through, a short explanation follows, then one reflection question. It is illustrative, not a clinical assessment.";INFO.c.lad=["AI-generated roadmap","AI daily planning","Progress analysis","Adaptive planning","Knowledge base / RAG","Tools and agents","Voice and multimodal interaction","Web, iOS and laptop ecosystem","Personal AI OS"];
+for(const k of "ctm"){const d=INFO[k],r=$("#info-"+k);
+ const sec=(h,x)=>{const s=el("div");s.append(el("h2",0,h));x.nodeType?s.append(x):s.append(el("p",0,x));r.append(s)};
+ sec("Problem",d.problem);sec("Vision",d.vision);sec("How it works",d.how);sec("Example use case",d.ex);
+ const ul=el("ul");d.feat.forEach(f=>ul.append(el("li",0,f)));sec("Main features",ul);
+ const rl=el("ul","clean rm");d.road.forEach(x=>{const li=el("li");li.append(el("b",0,x[0]+" "),document.createTextNode(x[1]+" "),el("span","pill"+(x[2]=="Focus"?" ok":""),x[2]));rl.append(li)});
+ const w=el("div");w.append(rl,el("p","note",d.rn));if(d.lad){w.append(el("h3",0,"Possible AI capability evolution"));const lo=el("ol");d.lad.forEach(x=>lo.append(el("li",0,x)));w.append(lo,el("p","note","A proposed technical ladder, separate from the V0–V7 product versions. Not verified history."))}sec("Version roadmap",w);sec("Technical direction",d.tech);sec("Status and next milestone",d.stat)}
+// ---- CHIRANJIV
+const T=[["Solve two DSA problems",1],["Revise binary search",1],["Study one System Design concept",1],["Complete one work task",0]];
+const heat=$("#heat");for(let i=0;i<20;i++){const x=el("i",i<17?"y":"");if(i==17)x.className="y t";heat.append(x)}
+$("#streak").textContent="Streak: 17 days (sample)";
+function drawT(){const box=$("#tasks");box.textContent="";T.forEach((t,i)=>{const d=el("div","chk"+(t[1]==1?" done":""));const c=el("input");c.type="checkbox";c.id="tk"+i;c.checked=t[1]==1;c.onchange=()=>{t[1]=c.checked?1:0;drawT()};const l=el("label",0,t[0]+(t[1]==2?" (skipped)":""));l.htmlFor=c.id;const sk=el("button",0,t[1]==2?"Undo skip":"Skip");sk.setAttribute("aria-label",(t[1]==2?"Undo skip ":"Skip ")+t[0]);sk.onclick=()=>{t[1]=t[1]==2?0:2;drawT()};d.append(c,l,sk);box.append(d)});
+ const n=T.filter(t=>t[1]==1).length,p=Math.round(n/T.length*100);box.append(el("p","note",n+"/"+T.length+" tasks complete today"));
+ $("#ring").style.strokeDashoffset=289*(1-p/100);$("#ringt").textContent=p+"%"}
+drawT();
+$("#saveR").onclick=()=>{$("#rs").textContent="Saved for this session only"};
+$("#askC").onclick=()=>{const r=$("#refl").value.toLowerCase(),left=T.filter(t=>!t[1]).map(t=>t[0].toLowerCase());let s;
+ if(r.includes("binary"))s="Tomorrow, spend 20 minutes revisiting boundary conditions before attempting a medium problem.";
+ else if(left.length)s="Finish “"+left[0]+"” first tomorrow morning, then reassess your plan.";
+ else s="All tasks are done. Pick one weak area from your reflection and give it the first block tomorrow.";
+ $("#coach").textContent=s+" (simulated)"};
+const R=[];
+function drawR(){const u=$("#res");u.textContent="";R.forEach((r,i)=>{const li=el("li"),row=el("div","row"),b=el("button",0,"Remove");b.setAttribute("aria-label","Remove "+r);b.onclick=()=>{R.splice(i,1);drawR()};row.append(el("span",0,r),b);li.append(row);u.append(li)});if(!R.length)u.append(el("li",0,"No resources yet. Add what you plan to study with."))}
+$("#files").onchange=e=>{[...e.target.files].forEach(f=>R.push(f.name));e.target.value="";drawR()};
+$("#addRes").onclick=()=>{const v=$("#link").value.trim();if(v){R.push(v);$("#link").value="";drawR()}};
+$("#clr").onclick=()=>{R.length=0;$("#plan").textContent="";drawR()};
+$("#gen").onclick=()=>{const g=$("#goal").value.trim(),D=+$("#dur").value,p=$("#plan");p.textContent="";
+ if(!g){p.append(el("p","note","Enter a goal first."));return}
+ if(!R.length){p.append(el("p","note","Add at least one resource so the plan has something to schedule."));return}
+ const ph=["Foundations","Practice","Review and mock tests"],sz=Math.floor(D/3);
+ p.append(el("h3",0,"Draft plan: "+g+" ("+D+" days)"));const ol=el("ol");
+ ph.forEach((n,i)=>{const a=i*sz+1,b=i==2?D:(i+1)*sz,rs=R.filter((_,j)=>j%3==i).join(", ")||"none assigned yet",li=el("li");li.append(el("b",0,"Days "+a+"–"+b+": "+n+". "),document.createTextNode("Resources: "+rs));ol.append(li)});
+ p.append(ol);const s=el("button","pri","Start this challenge");
+ s.onclick=()=>{$("#chT").textContent="Challenge: "+g;$("#dayl").textContent="Day 1 of "+D;$("#streak").textContent="Streak: 0 days (new challenge)";
+  heat.textContent="";for(let i=0;i<20;i++)heat.append(el("i",i==0?"t":""));
+  T.splice(0,T.length,...R.slice(0,4).map(r=>["Study: "+r,0]));drawT();p.append(el("p","note","Day 1 tasks were created from your first resources. Tick them off below."))};
+ p.append(s,el("p","note","Simulated: resources are split across three phases by simple rules. A real coach would read them and adapt the plan."))};
+drawR();
+// ---- TRIP
+const SAMPLE=[["Munnar",10.089,77.06],["Thekkady",9.603,77.168],["Alleppey",9.498,76.339],["Fort Kochi",9.965,76.242],["Varkala",8.733,76.716]];
+let S0={n:"Kochi International Airport",lat:10.152,lon:76.402};let stops=[];
+const EXTRA=[["Kovalam",8.40,76.978],["Kumarakom",9.617,76.43],["Athirappilly",10.285,76.57],["Thiruvananthapuram",8.524,76.937],["Wayanad",11.608,76.083]];
+const PL=[["Kochi International Airport",10.152,76.402],...SAMPLE,...EXTRA];
+PL.forEach((p,i)=>$("#start").append(new Option(p[0],i)));
+$("#start").onchange=e=>{const p=PL[e.target.value];S0={n:p[0],lat:p[1],lon:p[2]};draw()};
+{const dl=el("datalist");dl.id="pl";PL.forEach(p=>dl.append(new Option(p[0])));document.body.append(dl);$("#addn").setAttribute("list","pl")}
+const km=(a,b)=>{const r=Math.PI/180,x=Math.sin((b.lat-a.lat)*r/2)**2+Math.cos(a.lat*r)*Math.cos(b.lat*r)*Math.sin((b.lon-a.lon)*r/2)**2;return 12742*Math.asin(Math.sqrt(x))};
+function reset(){stops=SAMPLE.map(s=>({n:s[0],lat:s[1],lon:s[2]}));draw()}
+const msg=t=>$("#tmsg").textContent=t;
+function gm(list){const q=encodeURIComponent,o=list[0],d=list[list.length-1],w=list.slice(1,-1);
+ return "https://www.google.com/maps/dir/?api=1&origin="+q(o.n)+"&destination="+q(d.n)+(w.length?"&waypoints="+w.map(x=>q(x.n)).join("%7C"):"")+"&travelmode="+($("#mode").value=="two-wheeler"?"two-wheeler":$("#mode").value)}
+function draw(){const ol=$("#stops");ol.textContent="";
+ stops.forEach((s,i)=>{const li=el("li");const row=el("div","row");row.append(el("b",0,s.n),el("span","pill",s.lat==null?"not on schematic":"placed"));
+  const mk=(t,f,dis,lab)=>{const b=el("button",0,t);b.disabled=dis;b.setAttribute("aria-label",lab+" "+s.n);b.onclick=f;return b};
+  row.append(mk("↑",()=>{[stops[i-1],stops[i]]=[stops[i],stops[i-1]];draw()},i==0,"Move up"),mk("↓",()=>{[stops[i+1],stops[i]]=[stops[i],stops[i+1]];draw()},i==stops.length-1,"Move down"),mk("Remove",()=>{stops.splice(i,1);draw()},false,"Remove"));li.append(row);ol.append(li)});
+ if(!stops.length)ol.append(el("li",0,"No stops yet. Add the places you want to visit."));
+ // map
+ const m=$("#map");m.textContent="";const P=[S0,...stops.filter(s=>s.lat!=null)],ns="http://www.w3.org/2000/svg";
+ const mkS=(t,a)=>{const e=document.createElementNS(ns,t);for(const k in a)e.setAttribute(k,a[k]);return e};
+ const la=P.map(p=>p.lat),lo=P.map(p=>p.lon),a0=Math.min(...la),a1=Math.max(...la),o0=Math.min(...lo),o1=Math.max(...lo);
+ const X=p=>30+(p.lon-o0)/((o1-o0)||1)*240,Y=p=>270-(p.lat-a0)/((a1-a0)||1)*240;
+ m.append(mkS("polyline",{points:P.map(p=>X(p)+","+Y(p)).join(" "),fill:"none",stroke:"var(--ac)","stroke-width":2,"stroke-dasharray":"5 4"}));
+ const sq=mkS("rect",{x:X(S0)-7,y:Y(S0)-7,width:14,height:14,fill:"var(--fg)"});m.append(sq);const st=mkS("text",{x:X(S0)+10,y:Y(S0)-8,fill:"var(--fg)","font-size":11});st.textContent="Start";m.append(st);
+ let n=0;stops.forEach(s=>{n++;if(s.lat==null)return;const g=mkS("circle",{cx:X(s),cy:Y(s),r:11,fill:"var(--ac)"});const t=mkS("text",{x:X(s),y:Y(s)+4,"text-anchor":"middle","font-size":12,fill:"var(--bg)"});t.textContent=n;const l=mkS("text",{x:X(s)+14,y:Y(s)+4,"font-size":11,fill:"var(--fg)"});l.textContent=s.n;m.append(g,t,l)});
+ // itinerary
+ const it=$("#itin");it.textContent="";const D=+$("#days").value;
+ if(!stops.length){it.append(el("p",0,"Add stops to see a day-wise plan."));return}
+ const per=Math.ceil(stops.length/D);let prev=S0,idx=1;
+ for(let d=0;d<D;d++){const ch=stops.slice(d*per,(d+1)*per);if(!ch.length)break;
+  const c=el("div","card");c.style.marginBottom=".6rem";c.append(el("h3",0,"Day "+(d+1)));
+  const ul=el("ol");ul.start=idx;let tot=0,ok=true;
+  ch.forEach(s=>{const li=el("li",0,s.n);if(s.lat!=null&&prev.lat!=null){const k=km(prev,s);tot+=k;li.append(" — about "+Math.round(k)+" km straight-line from previous")}else ok=false;prev=s;ul.append(li)});
+  idx+=ch.length;c.append(ul);
+  const lst=[d==0?S0:stops[d*per-1],...ch];const a=el("a",0,"Open Day "+(d+1)+" in Google Maps");a.href=gm(lst);a.target="_blank";a.rel="noopener";
+  c.append(a);if(!ok)c.append(el("p","note","Some stops have no coordinates, so distances are incomplete."));it.append(c)}}
+$("#addb").onclick=()=>{const v=$("#addn").value.trim();if(!v){msg("Enter a destination name first.");return}
+ const known=PL.find(s=>s[0].toLowerCase()==v.toLowerCase());
+ stops.push(known?{n:known[0],lat:known[1],lon:known[2]}:{n:v,lat:null,lon:null});$("#addn").value="";msg(known?"Added "+known[0]+".":"Added “"+v+"” to the list. It isn’t shown on the schematic because no geocoder is connected.");draw()};
+$("#addn").onkeydown=e=>{if(e.key=="Enter")$("#addb").click()};
+$("#opt").onclick=()=>{const rest=stops.filter(s=>s.lat!=null),out=stops.filter(s=>s.lat==null),res=[];let cur=S0;
+ while(rest.length){let bi=0;rest.forEach((s,i)=>{if(km(cur,s)<km(cur,rest[bi]))bi=i});cur=rest.splice(bi,1)[0];res.push(cur)}
+ stops=[...res,...out];msg("Reordered by nearest-next straight-line distance. A simple heuristic, not a true optimizer.");draw()};
+$("#rst").onclick=()=>{reset();msg("Sample trip restored.")};
+$("#days").onchange=draw;$("#mode").onchange=draw;reset();
+// ---- MIND
+const CONV={rel:{k:/relationship|miss|ex\b|breakup|break up/i,l:[["mind","We know why the relationship ended. Remember the reasons you decided to move on."],["mann","Agreed. But knowing why something ended doesn’t automatically switch off the memories."],["mind","So missing someone doesn’t necessarily mean the decision was wrong?"],["mann","Exactly. Feelings don’t always follow the calendar invite you sent them.","humour"]],e:"Emotional attachment and intellectual understanding can move at different speeds. You can recognize that a relationship has ended and still feel longing.",x:"What exactly do you miss: the person, the routine, the comfort, or the version of life you imagined?"},
+ slp:{k:/sleep|scroll|phone|procrastin/i,l:[["mind","It’s 1 a.m. Tomorrow-you is going to be tired."],["mann","Tomorrow-you isn’t here yet. Tonight-you wants one more small win.","humour"],["mind","Fair. So the scrolling is giving you something, not just wasting time?"],["mann","Probably. The question is whether it’s the thing you actually need."]],e:"People often weigh nearer rewards more heavily than later ones, so knowing you should sleep doesn’t always change what you do tonight.",x:"What are you hoping the scrolling gives you: rest, escape, company, or something else?"}};
+CONV.guilt={k:/guilt|fault|blame/i,l:[["mind","The facts are clear. It wasn’t your fault."],["mann","Facts live in the head. Guilt lives somewhere with worse Wi-Fi.","humour"],["mind","So the guilt doesn’t prove I did something wrong?"],["mann","Not by itself. It can mean you care. It’s worth asking whether it points at something real or is just loud."]],e:"Guilt can persist even when we know we weren’t responsible. The feeling may reflect care or a sense of responsibility rather than evidence of wrongdoing.",x:"If a friend told you this exact story, what would you say to them?"};
+const CRISIS=/suicid|kill myself|end my life|hurt myself|self.?harm|want to die/i;
+function say(){const t=$("#th").value.trim(),c=$("#chat");c.textContent="";if(!t){c.append(el("p","note","Type a thought first, or try the example."));return}
+ if(CRISIS.test(t)){c.append(el("p","note","This sounds serious. This demo can’t help with it. If you may be in danger or thinking of harming yourself, please contact local emergency services or a crisis line in your country, or reach out to someone you trust right now."));return}
+ const k=Object.values(CONV).find(v=>v.k.test(t));
+ if(!k){c.append(el("p","note","This demo only has three curated conversations (a relationship ending, late-night scrolling, and guilt). A real version would use reviewed content, and an LLM only if that decision is made."));return}
+ k.l.forEach(l=>{const d=el("div","msg "+l[0]);d.append(el("small",0,l[0]=="mind"?"Mind":"Mann"),document.createTextNode(l[1]));if(l[2])d.append(el("span","tag","humour, not evidence"));c.append(d)});
+ const e=el("div","card");e.append(el("b",0,"Plain-language explanation "),el("span","pill","General education; source link pending review"),el("p",0,k.e));c.append(e);
+ const x=el("div","card");x.style.marginTop=".6rem";x.append(el("b",0,"Reflection"),el("p",0,k.x));c.append(x)}
+$("#go").onclick=say;$("#th").onkeydown=e=>{if(e.key=="Enter")say()};
+$$(".ex").forEach(b=>b.onclick=()=>{$("#th").value=b.dataset.t;say()});
+$("#lang").onchange=e=>{$("#lnote").hidden=e.target.value=="en";document.documentElement.lang="en"};
+const FL=[["Student","A student proposes a concept and finds candidate sources. Mockup only."],["Evidence","A reviewer checks each source and marks the claim supported, partly supported or unsupported."],["Knowledge base","Verified claims are stored with source references and version history."],["Conversation","Dialogue draws only on verified claims. Humour and metaphor are tagged separately."]];
+FL.forEach((f,i)=>{const b=el("button",0,f[0]);b.onclick=()=>{$("#flowd").textContent=f[1];$$("#flow button").forEach(x=>x.className="");b.className="pri"};$("#flow").append(b)});
+$("#flowd").textContent="Select a stage to see what happens there.";
+route();
+</script></body></html>
